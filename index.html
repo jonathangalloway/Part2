@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Golf</title>
+    <body>
+    
+          <script>
+            let name = prompt("Welcome to GC mini golf! What is your name?");
+            document.write(name);
+            let holes = Number (prompt(`Hi ${name}! Would you like to play 3 or 6 holes today?`))
+
+            if (holes === 3){
+                let hole1 = Number (prompt (`How many putts for hole 1? (par: 3)`));
+                let hole2 = Number (prompt (`How many putts for hole 2? (par: 3)`));
+                let hole3 = Number (prompt (`How many putts for hole 3? (par: 3)`));
+                let total = 0
+          let putts = Number (hole1 + hole2 + hole3)
+          total += putts;
+          if (total => 6){
+       console.log; "Great job, ${name} Your total par was: ${total}";
+   }else if (total < 7)
+        console.log; "Nice try, ${name}... Your total par was: ${total}"
+
+
+            }else if (holes === 6){
+              let hole1 = Number (prompt (`How many putts for hole 1? (par: 3)`))
+                let hole2 = Number (prompt(`How many putts for hole 2? (par: 3)`))
+                let hole3 = Number (prompt (`How many putts for hole 3? (par: 3)`))
+                let hole4 = Number (prompt (`How many putts for hole 4? (par: 3)`))
+                let hole5 = Number (prompt (`How many putts for hole 5? (par: 3)`))
+                let hole6 = Number (prompt (`How many putts for hole 6? (par: 3)`))
+               }
+            let total = 0
+          let putts = Number (hole1 + hole2 + hole3 + hole5+ hole6)
+             total += putts;
+
+   if (total => 6){
+       console.log `Great job, ${name} Your total par was: ${total}`
+   }else if (total < 7)
+        console.log `Nice try, ${name}... Your total par was: ${total}`
+
+
+    
+        
+
+        
+          </script>
+        
+    
+        
+</body>
+</html>
